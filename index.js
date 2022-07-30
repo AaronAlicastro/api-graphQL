@@ -13,7 +13,7 @@ require("dotenv").config();
 
 mongoose.connect( process.env.LINK )
 .then( e => console.log("Se ha conectado con la base de datos"))
-.catch(error=> console.log("Algo ha salio mal"));
+.catch(error=> console.log(error));
 
 const characters = require("./schemas/characters.js");
 const episodes = require("./schemas/episodes.js");
